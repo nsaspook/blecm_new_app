@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.microchip.blecm.android"
-        minSdkVersion 18
-        targetSdkVersion 25
+        minSdkVersion 19
+        targetSdkVersion 22
         versionCode buildVersionCode()
         versionName buildVersionName()
     }
