@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BLEC2M</string>
+    <string name="app_name">BLECM2</string>
     <string name="wta_attribution_url">http://www.willowtreeapps.com/?utm_source=com.microchip.blecm.android&amp;utm_medium=android&amp;utm_campaign=attribution</string>
 
     <string name="font_roboto_medium">Roboto-Medium.ttf</string>
     <string name="font_roboto_regular">Roboto-Regular.ttf</string>
 
     <string name="drawer_open">Console</string>
-    <string name="drawer_close">Microchip BLECM</string>
+    <string name="drawer_close">Microchip BLECM2</string>
 
     <string name="microchip_circle">Microchip Circle</string>
     <string name="label_buttons">Buttons</string>

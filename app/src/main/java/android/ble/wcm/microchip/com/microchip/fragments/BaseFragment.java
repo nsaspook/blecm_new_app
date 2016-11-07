@@ -21,8 +21,8 @@ public class BaseFragment extends Fragment {
      *
      * @param potentiometer     - ProgressBar to animate
      * @param potentiometerText - TextView to animate
-     * @param fromValue         - Value from 0 to 1023
-     * @param toValue           - Value from 0 to 1023
+     * @param fromValue         - Value from 0 to 4095
+     * @param toValue           - Value from 0 to 4095
      */
     public void setPotentiometerProgress(ProgressBar potentiometer, TextView potentiometerText, float fromValue, float toValue, int animationDuration){
         animatePotentiometerToValue(
@@ -39,16 +39,16 @@ public class BaseFragment extends Fragment {
      *
      * @param p         ProgressBar to animate
      * @param t         TextView to animate
-     * @param from      Value from 0 to 1023
-     * @param to        Value from 0 to 1023
+     * @param from      Value from 0 to 4095
+     * @param to        Value from 0 to 4095
      * @param duration  Animation duration in milliseconds
      * @param l         Animation Listener
      */
     private void animatePotentiometerToValue(ProgressBar p, TextView t, float from, float to, int duration, Animation.AnimationListener l){
 
         // ProgressBar Animation
-        float fromPercentage = from / 1023 * 100;
-        float toPercentage = to / 1023 * 100;
+        float fromPercentage = from / 4095 * 100;
+        float toPercentage = to / 4095 * 100;
         ProgressBarAnimation progressBarAnimation = new ProgressBarAnimation(p, fromPercentage, toPercentage);
         progressBarAnimation.setDuration(duration);
         progressBarAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
