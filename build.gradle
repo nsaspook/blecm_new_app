@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
 
@@ -35,7 +35,7 @@ def Integer buildVersionCode() {
  * @return String Version Name.
  */
 def String buildVersionName() {
-    return "1.1.0";
+    return "1.2.0";
 }
 
 allprojects {

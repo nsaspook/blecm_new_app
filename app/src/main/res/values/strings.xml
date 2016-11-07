@@ -17,13 +17,13 @@
     <string name="label_s3">S3</string>
     <string name="label_s4">S4</string>
     <string name="label_buttons_s">S</string>
-    <string name="label_leds">LEDs</string>
-    <string name="label_d">D</string>
-    <string name="label_d1">D1</string>
-    <string name="label_d2">D2</string>
-    <string name="label_d3">D3</string>
-    <string name="label_d4">D4</string>
-    <string name="potentiometer">Potentiometer</string>
+    <string name="label_leds">RELAYs/ADC CHANNELs</string>
+    <string name="label_d">Relay</string>
+    <string name="label_d1">Relay 1</string>
+    <string name="label_d2">Relay 2</string>
+    <string name="label_d3">Addr 0</string>
+    <string name="label_d4">Addr 1</string>
+    <string name="potentiometer">Analog Input</string>
 
     <string name="server_configured">Server Connected</string>
     <string name="server_configuring">Connecting to Server</string>

@@ -67,6 +67,9 @@ public class BleService extends Service {
     private UUID UUID_CHARACTERISTIC_BUTTONS = GattServiceAttributes.UUID_CHARACTERISTIC_BUTTONS;
     private UUID UUID_CHARACTERISTIC_POTENTIOMETER = GattServiceAttributes.UUID_CHARACTERISTIC_POTENTIOMETER;
     private UUID UUID_CHARACTERISTIC_LEDS = GattServiceAttributes.UUID_CHARACTERISTIC_LEDS;
+    private UUID UUID_CHARACTERISTIC_RELAYS = GattServiceAttributes.UUID_CHARACTERISTIC_RELAYS;
+    private UUID UUID_CHARACTERISTIC_ADC_CHAN = GattServiceAttributes.UUID_CHARACTERISTIC_ADC_CHAN;
+    private UUID UUID_CHARACTERISTIC_PIC_SLAVE = GattServiceAttributes.UUID_CHARACTERISTIC_PIC_SLAVE;
     private UUID UUID_CHARACTERISTIC_MODEL_NUMBER = GattServiceAttributes.UUID_CHARACTERISITC_MODEL_NUMBER;
     private UUID UUID_CHARACTERISTIC_SERIAL_NUMBER = GattServiceAttributes.UUID_CHARACTERISITC_SERIAL_NUMBER;
 
@@ -88,6 +91,9 @@ public class BleService extends Service {
 
     private LocalBroadcastManager broadcast;
     private BluetoothGattCharacteristic ledsCharacteristic;
+    private BluetoothGattCharacteristic relaysCharacteristic;
+    private BluetoothGattCharacteristic adc_chanCharacteristic;
+    private BluetoothGattCharacteristic pic_slaveCharacteristic;
 
     private final BluetoothGattCallback bleCallback = new MicrochipBluetoothGattCallback();
     private Queue<BluetoothGattDescriptor> descriptorQueue = new LinkedList<BluetoothGattDescriptor>();
@@ -421,6 +427,9 @@ public class BleService extends Service {
                         readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_POTENTIOMETER));
                         readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_BUTTONS));
                         readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_LEDS));
+                        readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_RELAYS));
+                        readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_ADC_CHAN));
+                        readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_PIC_SLAVE));
                     }else if(service.getUuid().equals(UUID_SERVICE_DEVICE_INFORMATION)){
                         readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_MODEL_NUMBER));
                         readGattCharacteristic(service.getCharacteristic(UUID_CHARACTERISTIC_SERIAL_NUMBER));
@@ -449,6 +458,12 @@ public class BleService extends Service {
                     registerCharacteristic(characteristic);
                 } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_LEDS)){
                     ledsCharacteristic = characteristic;
+                } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_RELAYS)){
+                    relaysCharacteristic = characteristic;
+                } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_ADC_CHAN)){
+                    adc_chanCharacteristic = characteristic;
+                } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_PIC_SLAVE)){
+                    pic_slaveCharacteristic = characteristic;
                 } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_MODEL_NUMBER)){
                     modelNumber = BleUtils.bytesToDecodedHexString(characteristic.getValue());
                 } else if(characteristic.getUuid().equals(UUID_CHARACTERISTIC_SERIAL_NUMBER)){

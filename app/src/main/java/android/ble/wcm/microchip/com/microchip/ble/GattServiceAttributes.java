@@ -26,6 +26,9 @@ public class GattServiceAttributes {
     private static String CHARACTERISTIC_BUTTONS = "8f7087bd-fdf3-4b87-b10f-abbf636b1cd5";
     private static String CHARACTERISTIC_POTENTIOMETER = "362232e5-c5a9-4af6-b30c-e208f1a9ae3e";
     private static String CHARACTERISTIC_LEDS = "cd830609-3afa-4a9d-a58b-8224cd2ded70";
+    private static String CHARACTERISTIC_RELAYS = "cd83060a-3afa-4a9d-a58b-8224cd2ded70";
+    private static String CHARACTERISTIC_ADC_CHAN = "cd83060b-3afa-4a9d-a58b-8224cd2ded70";
+    private static String CHARACTERISTIC_PIC_SLAVE = "cd83060c-3afa-4a9d-a58b-8224cd2ded70";
 
     /**
      * Generic Characteristic
@@ -48,6 +51,9 @@ public class GattServiceAttributes {
     public static UUID UUID_CHARACTERISTIC_BUTTONS = UUID.fromString(CHARACTERISTIC_BUTTONS);
     public static UUID UUID_CHARACTERISTIC_POTENTIOMETER = UUID.fromString(CHARACTERISTIC_POTENTIOMETER);
     public static UUID UUID_CHARACTERISTIC_LEDS = UUID.fromString(CHARACTERISTIC_LEDS);
+    public static UUID UUID_CHARACTERISTIC_RELAYS = UUID.fromString(CHARACTERISTIC_RELAYS);
+    public static UUID UUID_CHARACTERISTIC_ADC_CHAN = UUID.fromString(CHARACTERISTIC_ADC_CHAN);
+    public static UUID UUID_CHARACTERISTIC_PIC_SLAVE = UUID.fromString(CHARACTERISTIC_PIC_SLAVE);
     public static UUID UUID_CHARACTERISITC_MODEL_NUMBER = UUID.fromString(BASE_16_BIT.replace("XXXX", CHARACTERISTIC_MODEL_NUMBER));
     public static UUID UUID_CHARACTERISITC_SERIAL_NUMBER = UUID.fromString(BASE_16_BIT.replace("XXXX", CHARACTERISTIC_SERIAL_NUMBER));
 
