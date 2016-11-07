@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BLECM</string>
+    <string name="app_name">BLEC2M</string>
     <string name="wta_attribution_url">http://www.willowtreeapps.com/?utm_source=com.microchip.blecm.android&amp;utm_medium=android&amp;utm_campaign=attribution</string>
 
     <string name="font_roboto_medium">Roboto-Medium.ttf</string>
