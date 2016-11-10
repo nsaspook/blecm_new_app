@@ -60,5 +60,9 @@
     <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
 
     <string name="zero">0</string>
+    <string name="addr_2">Addr 2</string>
+    <string name="addr_4">Addr 4</string>
+    <string name="relay_4">Relay 4</string>
+    <string name="relay_3">Relay 3</string>
 
 </resources>

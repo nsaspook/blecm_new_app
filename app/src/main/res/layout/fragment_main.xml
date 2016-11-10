@@ -90,38 +90,6 @@
             </LinearLayout>
 
             <!-- Switch Label Columns -->
-            <LinearLayout
-                android:id="@+id/switch_label_container"
-                style="@style/WrapDefaultPaddingLeftRight"
-                android:orientation="vertical"
-                android:layout_toLeftOf="@+id/switch_container"
-                android:layout_toStartOf="@+id/switch_container"
-                android:gravity="center_horizontal"
-                android:layout_alignBottom="@+id/buttons_label_container"
-                android:layout_marginRight="@dimen/spacing_normal"
-                >
-
-                <oak.widget.TextViewWithFont
-                    style="@style/MicrochipLabel1Weighted"
-                    android:text="@string/label_leds"/>
-
-                <oak.widget.TextViewWithFont
-                    style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d1"/>
-
-                <oak.widget.TextViewWithFont
-                    style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d2"/>
-
-                <oak.widget.TextViewWithFont
-                    style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d3"/>
-
-                <oak.widget.TextViewWithFont
-                    style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d4"/>
-
-            </LinearLayout>
 
             <!-- Switch Columns -->
             <LinearLayout
@@ -162,6 +130,74 @@
                     android:id="@+id/switch_d4"
                     style="@style/MicrochipSwitchWeighted"
                     />
+
+                <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
+                    android:id="@+id/relay_d1"
+                    style="@style/MicrochipSwitchWeighted"
+                    />
+
+                <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
+                    android:id="@+id/relay_d2"
+                    style="@style/MicrochipSwitchWeighted"
+                    />
+
+                <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
+                    android:id="@+id/relay_d3"
+                    style="@style/MicrochipSwitchWeighted"
+                    />
+
+                <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
+                    android:id="@+id/relay_d4"
+                    style="@style/MicrochipSwitchWeighted"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/switch_label_container"
+                style="@style/WrapDefaultPaddingLeftRight"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/switch_container"
+                android:layout_marginEnd="16dp">
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel1Weighted"
+                    android:text="@string/label_leds"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/label_d1"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/label_d2"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/relay_3"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/relay_4"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/label_d3"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/label_d4"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/addr_2"/>
+
+                <oak.widget.TextViewWithFont
+                    style="@style/MicrochipLabel2Weighted"
+                    android:text="@string/addr_4"/>
 
             </LinearLayout>
         </RelativeLayout>

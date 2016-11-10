@@ -64,6 +64,10 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
     MicrochipSwitch switchD2;
     MicrochipSwitch switchD3;
     MicrochipSwitch switchD4;
+    MicrochipSwitch relayD1;
+    MicrochipSwitch relayD2;
+    MicrochipSwitch relayD3;
+    MicrochipSwitch relayD4;
 
     TextView potentiometerLabel;
     ProgressBar potentiometer;
@@ -155,6 +159,10 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         switchD2.setOnCheckedChangeListener(null);
         switchD3.setOnCheckedChangeListener(null);
         switchD4.setOnCheckedChangeListener(null);
+        relayD1.setOnCheckedChangeListener(null);
+        relayD2.setOnCheckedChangeListener(null);
+        relayD3.setOnCheckedChangeListener(null);
+        relayD4.setOnCheckedChangeListener(null);
 
         updateServerUI();
         updateButtonsUI();
@@ -168,6 +176,11 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         switchD2.setOnCheckedChangeListener(this);
         switchD3.setOnCheckedChangeListener(this);
         switchD4.setOnCheckedChangeListener(this);
+        relayD1.setOnCheckedChangeListener(this);
+        relayD2.setOnCheckedChangeListener(this);
+        relayD3.setOnCheckedChangeListener(this);
+        relayD4.setOnCheckedChangeListener(this);
+
     }
 
     /**
@@ -331,18 +344,22 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
             if(status != null){
                 if(currentLedSwitchValue1 != status.getLed1()){
                     switchD1.setChecked(status.getLed1());
+                    relayD1.setChecked(status.getLed1());
                     currentLedSwitchValue1 = status.getLed1();
                 }
                 if(currentLedSwitchValue2 != status.getLed2()){
                     switchD2.setChecked(status.getLed2());
+                    relayD2.setChecked(status.getLed2());
                     currentLedSwitchValue2 = status.getLed2();
                 }
                 if(currentLedSwitchValue3 != status.getLed3()){
                     switchD3.setChecked(status.getLed3());
+                    relayD3.setChecked(status.getLed3());
                     currentLedSwitchValue3 = status.getLed3();
                 }
                 if(currentLedSwitchValue4 != status.getLed4()){
                     switchD4.setChecked(status.getLed4());
+                    relayD4.setChecked(status.getLed4());
                     currentLedSwitchValue4 = status.getLed4();
                 }
             }else{
@@ -499,6 +516,11 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         switchD2 = (MicrochipSwitch) view.findViewById(R.id.switch_d2);
         switchD3 = (MicrochipSwitch) view.findViewById(R.id.switch_d3);
         switchD4 = (MicrochipSwitch) view.findViewById(R.id.switch_d4);
+        relayD1 = (MicrochipSwitch) view.findViewById(R.id.relay_d1);
+        relayD2 = (MicrochipSwitch) view.findViewById(R.id.relay_d2);
+        relayD3 = (MicrochipSwitch) view.findViewById(R.id.relay_d3);
+        relayD4 = (MicrochipSwitch) view.findViewById(R.id.relay_d4);
+
 
         potentiometerLabel = (TextView) view.findViewById(R.id.potentiometer_label);
         potentiometer = (ProgressBar) view.findViewById(R.id.potentiometer_progressbar);
