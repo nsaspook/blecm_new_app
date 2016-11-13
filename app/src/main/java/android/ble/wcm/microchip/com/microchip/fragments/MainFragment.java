@@ -371,6 +371,10 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
                 switchD2.setChecked(false);
                 switchD3.setChecked(false);
                 switchD4.setChecked(false);
+                relayD1.setChecked(false);
+                relayD2.setChecked(false);
+                relayD3.setChecked(false);
+                relayD4.setChecked(false);
             }
         }
     }

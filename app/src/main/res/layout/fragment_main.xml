@@ -153,7 +153,7 @@
                 android:alpha="0"
                 tools:alpha="1"
                 android:layout_width="52dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true" />
 
             <LinearLayout
@@ -168,7 +168,7 @@
                     android:id="@+id/switch_d1"
                     style="@style/MicrochipSwitchWeighted"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+                    android:layout_height="60dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/switch_d2"
