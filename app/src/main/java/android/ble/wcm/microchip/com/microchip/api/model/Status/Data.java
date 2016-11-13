@@ -10,6 +10,10 @@ public class Data {
     public Boolean led2 = false;
     public Boolean led3 = false;
     public Boolean led4 = false;
+    public Boolean relay1 = false;
+    public Boolean relay2 = false;
+    public Boolean relay3 = false;
+    public Boolean relay4 = false;
     public Integer potentiometer = 0;
 
 }

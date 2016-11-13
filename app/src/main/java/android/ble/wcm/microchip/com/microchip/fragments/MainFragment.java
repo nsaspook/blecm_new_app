@@ -96,6 +96,10 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
     boolean currentLedSwitchValue2;
     boolean currentLedSwitchValue3;
     boolean currentLedSwitchValue4;
+    boolean currentRelaySwitchValue1;
+    boolean currentRelaySwitchValue2;
+    boolean currentRelaySwitchValue3;
+    boolean currentRelaySwitchValue4;
     boolean currentButtonValue1;
     boolean currentButtonValue2;
     boolean currentButtonValue3;
@@ -344,29 +348,46 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
             if(status != null){
                 if(currentLedSwitchValue1 != status.getLed1()){
                     switchD1.setChecked(status.getLed1());
-                    relayD1.setChecked(status.getLed1());
                     currentLedSwitchValue1 = status.getLed1();
                 }
                 if(currentLedSwitchValue2 != status.getLed2()){
                     switchD2.setChecked(status.getLed2());
-                    relayD2.setChecked(status.getLed2());
                     currentLedSwitchValue2 = status.getLed2();
                 }
                 if(currentLedSwitchValue3 != status.getLed3()){
                     switchD3.setChecked(status.getLed3());
-                    relayD3.setChecked(status.getLed3());
                     currentLedSwitchValue3 = status.getLed3();
                 }
                 if(currentLedSwitchValue4 != status.getLed4()){
                     switchD4.setChecked(status.getLed4());
-                    relayD4.setChecked(status.getLed4());
                     currentLedSwitchValue4 = status.getLed4();
+                }
+
+                if(currentRelaySwitchValue1 != status.getRelay1()){
+                    relayD1.setChecked(status.getRelay1());
+                    currentRelaySwitchValue1 = status.getRelay1();
+                }
+                if(currentRelaySwitchValue2 != status.getRelay2()){
+                    relayD2.setChecked(status.getRelay2());
+                    currentRelaySwitchValue2 = status.getRelay2();
+                }
+                if(currentRelaySwitchValue3 != status.getRelay3()){
+                    relayD3.setChecked(status.getRelay3());
+                    currentRelaySwitchValue3 = status.getRelay3();
+                }
+                if(currentRelaySwitchValue4 != status.getRelay4()){
+                    relayD4.setChecked(status.getRelay4());
+                    currentRelaySwitchValue4 = status.getRelay4();
                 }
             }else{
                 currentLedSwitchValue1 = false;
                 currentLedSwitchValue2 = false;
                 currentLedSwitchValue3 = false;
                 currentLedSwitchValue4 = false;
+                currentRelaySwitchValue1 = false;
+                currentRelaySwitchValue2 = false;
+                currentRelaySwitchValue3 = false;
+                currentRelaySwitchValue4 = false;
                 switchD1.setChecked(false);
                 switchD2.setChecked(false);
                 switchD3.setChecked(false);
@@ -478,6 +499,10 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
             status.setLed2(switchD2.isChecked());
             status.setLed3(switchD3.isChecked());
             status.setLed4(switchD4.isChecked());
+            status.setRelay1(relayD1.isChecked());
+            status.setRelay2(relayD2.isChecked());
+            status.setRelay3(relayD3.isChecked());
+            status.setRelay4(relayD4.isChecked());
             status.setPotentiometer((int) currentPotentiometerValue);
 
             if(!DataStore.getAwsAmi(getActivity()).isEmpty()){

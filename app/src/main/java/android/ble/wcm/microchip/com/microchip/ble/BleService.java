@@ -529,6 +529,7 @@ public class BleService extends Service {
                 // After all chars have been read and registered for notifications update LEDs
                 // on the device.
                 readLastServerResponseUpdateLeds();
+                readLastServerResponseUpdateRelays(); //FIXME
             }
         }
     }
@@ -567,6 +568,43 @@ public class BleService extends Service {
             byte[] value = BleUtils.stringToHexByteArray(led1 + led2 + led3 + led4);
             ledsCharacteristic.setValue(value);
             bluetoothGatt.writeCharacteristic(ledsCharacteristic);
+        }
+    }
+
+    /**
+     * Attempt to read the latest server response and update the device's RELAYs
+     */
+    private void readLastServerResponseUpdateRelays() {
+        ResponseModel responseModel = ResponseProvider.getFirstNonPostResponse(BleService.this);
+        Status status = responseModel != null
+                ?  GGson.fromJson(responseModel.responseStatus, Status.class)
+                : new Status();
+
+        writeRelays(status);
+    }
+
+    /**
+     * Attempt to write LEDs status to the BLE Device
+     *
+     * @param status Object that contains the LED Status
+     */
+    public void writeRelays(Status status){
+        if(bluetoothAdapter != null
+                && bluetoothGatt != null
+                && isConnected()
+                && relaysCharacteristic != null
+                && !DataStore.getUserPostInProgress(BleService.this)){
+
+            DataStore.persistBleStatusLeds(BleService.this, status);
+
+            String relay1 = status.getRelay1() ? "1" : "0";
+            String relay2 = status.getRelay2() ? "1" : "0";
+            String relay3 = status.getRelay3() ? "1" : "0";
+            String relay4 = status.getRelay4() ? "1" : "0";
+
+            byte[] value = BleUtils.stringToHexByteArray(relay1 + relay2 + relay3 + relay4);
+            relaysCharacteristic.setValue(value);
+            bluetoothGatt.writeCharacteristic(relaysCharacteristic);
         }
     }
 

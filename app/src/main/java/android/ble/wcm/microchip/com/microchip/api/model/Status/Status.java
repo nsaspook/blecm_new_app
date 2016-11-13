@@ -37,6 +37,22 @@ public class Status {
         return !isEmpty() && getData().led4;
     }
 
+    public boolean getRelay1(){
+        return !isEmpty() && getData().relay1;
+    }
+
+    public boolean getRelay2(){
+        return !isEmpty() && getData().relay2;
+    }
+
+    public boolean getRelay3(){
+        return !isEmpty() && getData().relay3;
+    }
+
+    public boolean getRelay4(){
+        return !isEmpty() && getData().relay4;
+    }
+
     public boolean getButton1(){
         return !isEmpty() && getData().button1;
     }
@@ -98,6 +114,22 @@ public class Status {
 
     public void setLed4(boolean checked){
         mchp.device.data.led4 = checked;
+    }
+
+    public void setRelay1(boolean checked){
+        mchp.device.data.relay1 = checked;
+    }
+
+    public void setRelay2(boolean checked){
+        mchp.device.data.relay2 = checked;
+    }
+
+    public void setRelay3(boolean checked){
+        mchp.device.data.relay3 = checked;
+    }
+
+    public void setRelay4(boolean checked){
+        mchp.device.data.relay4 = checked;
     }
 
     public void setPotentiometer(int value){
