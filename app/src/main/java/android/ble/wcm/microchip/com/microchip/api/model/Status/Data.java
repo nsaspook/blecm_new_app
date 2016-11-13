@@ -15,5 +15,7 @@ public class Data {
     public Boolean relay3 = false;
     public Boolean relay4 = false;
     public Integer potentiometer = 0;
+    public Boolean adc_data = false;
+    public Boolean pic_slave = false;
 
 }

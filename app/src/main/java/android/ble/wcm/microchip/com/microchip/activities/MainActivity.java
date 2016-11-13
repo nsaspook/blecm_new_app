@@ -6,6 +6,7 @@ import android.ble.wcm.microchip.com.microchip.adapters.BleListAdapter;
 import android.ble.wcm.microchip.com.microchip.adapters.MenuListAdapter;
 import android.ble.wcm.microchip.com.microchip.api.Api;
 import android.ble.wcm.microchip.com.microchip.api.ApiService;
+import android.ble.wcm.microchip.com.microchip.api.model.Status.Data;
 import android.ble.wcm.microchip.com.microchip.api.model.Status.Status;
 import android.ble.wcm.microchip.com.microchip.ble.BleInterface;
 import android.ble.wcm.microchip.com.microchip.ble.BleService;
@@ -472,7 +473,9 @@ public class MainActivity extends BaseActivity implements MainFragment.MainListe
     @Override
     public void onWriteLedToDevice(Status status) {
         if(bleService != null && bleService.isInitialized() && bleService.isConnected()){
-            bleService.writeLeds(status);
+ //           bleService.writeLeds(status);
+ 
+            bleService.writeAdc_Chan(status); //FIXME
         }
     }
 

@@ -26,8 +26,8 @@ public class GattServiceAttributes {
     private static String CHARACTERISTIC_BUTTONS = "8f7087bd-fdf3-4b87-b10f-abbf636b1cd5";
     private static String CHARACTERISTIC_POTENTIOMETER = "362232e5-c5a9-4af6-b30c-e208f1a9ae3e";
     private static String CHARACTERISTIC_LEDS = "cd830609-3afa-4a9d-a58b-8224cd2ded70";
-    private static String CHARACTERISTIC_RELAYS = "cd83060a-3afa-4a9d-a58b-8224cd2ded70";
-    private static String CHARACTERISTIC_ADC_CHAN = "cd83060b-3afa-4a9d-a58b-8224cd2ded70";
+    private static String CHARACTERISTIC_RELAYS =    "cd83060a-3afa-4a9d-a58b-8224cd2ded70";
+    private static String CHARACTERISTIC_ADC_CHAN =  "cd83060b-3afa-4a9d-a58b-8224cd2ded70";
     private static String CHARACTERISTIC_PIC_SLAVE = "cd83060c-3afa-4a9d-a58b-8224cd2ded70";
 
     /**

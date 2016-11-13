@@ -512,7 +512,7 @@ public class BleService extends Service {
          * read attempt to read the latest Server response and update the BLE device LEDs.
          *
          * @param gatt Gatt client invoked {@link BluetoothGatt#writeDescriptor}
-         * @param descriptor Descriptor that was writte to the associated
+         * @param descriptor Descriptor that was written to the associated
          *                   remote device.
          * @param status The result of the write operation
          *               {@link BluetoothGatt#GATT_SUCCESS} if the operation succeeds.
@@ -529,7 +529,7 @@ public class BleService extends Service {
                 // After all chars have been read and registered for notifications update LEDs
                 // on the device.
                 readLastServerResponseUpdateLeds();
-                readLastServerResponseUpdateRelays(); //FIXME
+                readLastServerResponseUpdateAdc_Chan(); //FIXME
             }
         }
     }
@@ -572,27 +572,27 @@ public class BleService extends Service {
     }
 
     /**
-     * Attempt to read the latest server response and update the device's RELAYs
+     * Attempt to read the latest server response and update the device's ADC channel
      */
-    private void readLastServerResponseUpdateRelays() {
+    private void readLastServerResponseUpdateAdc_Chan() {
         ResponseModel responseModel = ResponseProvider.getFirstNonPostResponse(BleService.this);
         Status status = responseModel != null
                 ?  GGson.fromJson(responseModel.responseStatus, Status.class)
                 : new Status();
 
-        writeRelays(status);
+        writeAdc_Chan(status);
     }
 
     /**
-     * Attempt to write LEDs status to the BLE Device
+     * Attempt to write ADC chan status to the BLE Device
      *
-     * @param status Object that contains the LED Status
+     * @param status Object that contains the chan Status
      */
-    public void writeRelays(Status status){
+    public void writeAdc_Chan(Status status){
         if(bluetoothAdapter != null
                 && bluetoothGatt != null
                 && isConnected()
-                && relaysCharacteristic != null
+                && adc_chanCharacteristic != null
                 && !DataStore.getUserPostInProgress(BleService.this)){
 
             DataStore.persistBleStatusLeds(BleService.this, status);
@@ -603,8 +603,8 @@ public class BleService extends Service {
             String relay4 = status.getRelay4() ? "1" : "0";
 
             byte[] value = BleUtils.stringToHexByteArray(relay1 + relay2 + relay3 + relay4);
-            relaysCharacteristic.setValue(value);
-            bluetoothGatt.writeCharacteristic(relaysCharacteristic);
+            adc_chanCharacteristic.setValue(value);
+            bluetoothGatt.writeCharacteristic(adc_chanCharacteristic);
         }
     }
 
