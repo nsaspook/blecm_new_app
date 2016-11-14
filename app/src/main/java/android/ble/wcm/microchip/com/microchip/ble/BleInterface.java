@@ -9,16 +9,16 @@ import android.bluetooth.BluetoothDevice;
  */
 public interface BleInterface {
 
-    public void onBleDisabled();
+    void onBleDisabled();
 
-    public void onBleScan(BluetoothDevice device);
+    void onBleScan(BluetoothDevice device);
 
-    public void onBleScanFailed(String message);
+    void onBleScanFailed(String message);
 
-    public void onScanningStarted();
+    void onScanningStarted();
 
-    public void onScanningStopped();
+    void onScanningStopped();
 
-    public void onConnectingToDevice();
+    void onConnectingToDevice();
 
 }

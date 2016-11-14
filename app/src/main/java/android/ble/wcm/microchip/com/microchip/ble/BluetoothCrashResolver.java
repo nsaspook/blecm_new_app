@@ -62,7 +62,7 @@ public class BluetoothCrashResolver {
 
     private Context context = null;
     private UpdateNotifier updateNotifier;
-    private Set<String> distinctBluetoothAddresses = new HashSet<String>();
+    private final Set<String> distinctBluetoothAddresses = new HashSet<String>();
     private DiscoveryCanceller discoveryCanceller = new DiscoveryCanceller();
     /**
      // It is very likely a crash if Bluetooth turns off and comes
@@ -226,7 +226,7 @@ public class BluetoothCrashResolver {
     public boolean isRecoveryInProgress() { return recoveryInProgress; }
 
     public interface UpdateNotifier {
-        public void dataUpdated();
+        void dataUpdated();
     }
 
     public void setUpdateNotifier(UpdateNotifier updateNotifier) {
@@ -409,10 +409,7 @@ public class BluetoothCrashResolver {
             }
             line = reader.readLine();
             if (line != null) {
-                lastRecoverySucceeded = false;
-                if (line.equals("1")) {
-                    lastRecoverySucceeded = true;
-                }
+                lastRecoverySucceeded = line.equals("1");
             }
 
             String mac;

@@ -525,8 +525,8 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
     }
 
     public interface MainListener{
-        public void onSwitchesLabelXPosition(int x);
-        public void onWriteLedToDevice(Status status);
+        void onSwitchesLabelXPosition(int x);
+        void onWriteLedToDevice(Status status);
     }
 
     @Override

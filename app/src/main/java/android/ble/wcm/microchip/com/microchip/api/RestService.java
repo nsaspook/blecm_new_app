@@ -11,8 +11,8 @@ import retrofit.http.Query;
 
 public interface RestService{
 
-    public static final String JSON_WCM_GET_STATUS = "/json_xcm_get_status.php";
-    public static final String JSON_WCM_POST_STATUS = "/json_xcm_post_status.php";
+    String JSON_WCM_GET_STATUS = "/json_xcm_get_status.php";
+    String JSON_WCM_POST_STATUS = "/json_xcm_post_status.php";
 
     /**
      * Asynchronous Calls

@@ -21,8 +21,8 @@
     <string name="label_d">Relay</string>
     <string name="label_d1">Relay 1</string>
     <string name="label_d2">Relay 2</string>
-    <string name="label_d3">Addr 0</string>
-    <string name="label_d4">Addr 1</string>
+    <string name="label_d3">Address bit 0</string>
+    <string name="label_d4">Address bit 1</string>
     <string name="potentiometer">Analog Input</string>
 
     <string name="server_configured">Server Connected</string>
@@ -60,8 +60,8 @@
     <string name="bluetooth_not_enabled">Bluetooth not enabled</string>
 
     <string name="zero">0</string>
-    <string name="addr_2">Addr 2</string>
-    <string name="addr_4">Addr 4</string>
+    <string name="addr_2">Address bit 2</string>
+    <string name="addr_4">Update Address</string>
     <string name="relay_4">Relay 4</string>
     <string name="relay_3">Relay 3</string>
 

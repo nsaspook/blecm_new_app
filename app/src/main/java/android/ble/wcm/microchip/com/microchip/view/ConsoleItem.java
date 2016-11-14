@@ -95,7 +95,7 @@ public class ConsoleItem extends LinearLayout implements View.OnClickListener, V
     }
 
     public interface Listener{
-        public void onItemClicked(ResponseModel responseModel);
-        public void onItemLongPressed(ResponseModel responseModel);
+        void onItemClicked(ResponseModel responseModel);
+        void onItemLongPressed(ResponseModel responseModel);
     }
 }

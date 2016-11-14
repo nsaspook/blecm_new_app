@@ -6,6 +6,6 @@ package android.ble.wcm.microchip.com.microchip.interfaces;
  * Time: 1:41 PM
  */
 public interface SettingsListener {
-    public void onSettingsOpened();
-    public void onSettingsClosed();
+    void onSettingsOpened();
+    void onSettingsClosed();
 }

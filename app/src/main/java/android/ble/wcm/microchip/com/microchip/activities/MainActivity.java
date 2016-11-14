@@ -458,7 +458,7 @@ public class MainActivity extends BaseActivity implements MainFragment.MainListe
     }
 
     public interface DrawerListener{
-        public void onDrawerClosed();
+        void onDrawerClosed();
     }
 
     @Override
