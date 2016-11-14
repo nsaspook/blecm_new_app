@@ -68,6 +68,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
     MicrochipSwitch relayD2;
     MicrochipSwitch relayD3;
     MicrochipSwitch relayD4;
+    MicrochipSwitch adcdata;
 
     TextView potentiometerLabel;
     ProgressBar potentiometer;
@@ -167,6 +168,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         relayD2.setOnCheckedChangeListener(null);
         relayD3.setOnCheckedChangeListener(null);
         relayD4.setOnCheckedChangeListener(null);
+        adcdata.setOnCheckedChangeListener(null);
 
         updateServerUI();
         updateButtonsUI();
@@ -184,6 +186,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         relayD2.setOnCheckedChangeListener(this);
         relayD3.setOnCheckedChangeListener(this);
         relayD4.setOnCheckedChangeListener(this);
+        adcdata.setOnCheckedChangeListener(this);
 
     }
 
@@ -363,21 +366,27 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
                     currentLedSwitchValue4 = status.getLed4();
                 }
 
+                adcdata.setChecked(false);
+
                 if(currentRelaySwitchValue1 != status.getRelay1()){
                     relayD1.setChecked(status.getRelay1());
                     currentRelaySwitchValue1 = status.getRelay1();
+                    adcdata.setChecked(true);
                 }
                 if(currentRelaySwitchValue2 != status.getRelay2()){
                     relayD2.setChecked(status.getRelay2());
                     currentRelaySwitchValue2 = status.getRelay2();
+                    adcdata.setChecked(true);
                 }
                 if(currentRelaySwitchValue3 != status.getRelay3()){
                     relayD3.setChecked(status.getRelay3());
                     currentRelaySwitchValue3 = status.getRelay3();
+                    adcdata.setChecked(true);
                 }
                 if(currentRelaySwitchValue4 != status.getRelay4()){
                     relayD4.setChecked(status.getRelay4());
                     currentRelaySwitchValue4 = status.getRelay4();
+                    adcdata.setChecked(true);
                 }
             }else{
                 currentLedSwitchValue1 = false;
@@ -396,6 +405,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
                 relayD2.setChecked(false);
                 relayD3.setChecked(false);
                 relayD4.setChecked(false);
+                adcdata.setChecked(false);
             }
         }
     }
@@ -503,6 +513,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
             status.setRelay2(relayD2.isChecked());
             status.setRelay3(relayD3.isChecked());
             status.setRelay4(relayD4.isChecked());
+            status.setAdc_Data(adcdata.isChecked());
             status.setPotentiometer((int) currentPotentiometerValue);
 
             if(!DataStore.getAwsAmi(getActivity()).isEmpty()){
@@ -549,6 +560,7 @@ public class MainFragment extends BaseFragment implements LoaderManager.LoaderCa
         relayD2 = (MicrochipSwitch) view.findViewById(R.id.relay_d2);
         relayD3 = (MicrochipSwitch) view.findViewById(R.id.relay_d3);
         relayD4 = (MicrochipSwitch) view.findViewById(R.id.relay_d4);
+        adcdata = relayD4;
 
 
         potentiometerLabel = (TextView) view.findViewById(R.id.potentiometer_label);

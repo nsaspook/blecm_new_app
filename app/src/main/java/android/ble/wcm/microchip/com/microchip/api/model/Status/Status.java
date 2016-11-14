@@ -53,6 +53,10 @@ public class Status {
         return !isEmpty() && getData().relay4;
     }
 
+    public boolean getAdc_Data(){
+        return !isEmpty() && getData().adc_data;
+    }
+
     public boolean getButton1(){
         return !isEmpty() && getData().button1;
     }
@@ -130,6 +134,10 @@ public class Status {
 
     public void setRelay4(boolean checked){
         mchp.device.data.relay4 = checked;
+    }
+
+    public void setAdc_Data(boolean checked){
+        mchp.device.data.adc_data = checked;
     }
 
     public void setPotentiometer(int value){

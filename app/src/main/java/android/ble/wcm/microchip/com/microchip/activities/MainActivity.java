@@ -473,9 +473,12 @@ public class MainActivity extends BaseActivity implements MainFragment.MainListe
     @Override
     public void onWriteLedToDevice(Status status) {
         if(bleService != null && bleService.isInitialized() && bleService.isConnected()){
- //           bleService.writeLeds(status);
- 
-            bleService.writeAdc_Chan(status); //FIXME
+
+            if (status.getAdc_Data()) {
+                bleService.writeAdc_Chan(status); //FIXME
+            }else {
+                bleService.writeLeds(status);
+            }
         }
     }
 
