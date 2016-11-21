@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.microchip.blecm.android"
         minSdkVersion 18
-        targetSdkVersion 25 // DON'T CHANGE THIS from 22
+        targetSdkVersion 22 // DON'T CHANGE THIS from 22, it causes older android versions not to work correctly
         versionCode buildVersionCode()
         versionName buildVersionName()
     }
