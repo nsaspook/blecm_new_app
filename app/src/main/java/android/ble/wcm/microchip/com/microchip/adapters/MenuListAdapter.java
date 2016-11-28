@@ -2,6 +2,7 @@ package android.ble.wcm.microchip.com.microchip.adapters;
 
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.ActionMode;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseBooleanArray;
@@ -153,7 +154,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<ConsoleViewHolder> imp
 
         if(hasCheckedItems && actionMode == null){
             // There are some selected items, start the ActionMode
-            actionMode = ((ActionBarActivity) context).startSupportActionMode(new ActionModeCallBack());
+            actionMode = ((AppCompatActivity) context).startSupportActionMode(new ActionModeCallBack());
         }else if(!hasCheckedItems && actionMode != null){
             // There are no selected items, finish the ActionMode
             actionMode.finish();

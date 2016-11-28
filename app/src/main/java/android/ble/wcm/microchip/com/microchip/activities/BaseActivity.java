@@ -10,6 +10,7 @@ import android.ble.wcm.microchip.com.microchip.animations.ExpandAnimation;
 import android.content.Context;
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -21,7 +22,7 @@ import android.view.inputmethod.InputMethodManager;
  * Date: 11/18/14
  * Time: 3:39 PM.
  */
-public abstract class BaseActivity extends ActionBarActivity implements SettingsListener {
+public abstract class BaseActivity extends AppCompatActivity implements SettingsListener {
 
     @Override
     public void onStart(){
