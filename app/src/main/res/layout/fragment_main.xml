@@ -13,26 +13,26 @@
 
         <RelativeLayout
             style="@style/WrapDefaultPaddingLeftRight"
-            android:background="@drawable/background_white_bottom_divider"
-            android:layout_weight="1.09"
-            tools:ignore="InefficientWeight"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1.09"
+            android:background="@drawable/background_white_bottom_divider"
+            tools:ignore="InefficientWeight">
 
             <!-- Button Label Columns -->
             <LinearLayout
                 android:id="@+id/buttons_label_container"
                 style="@style/Wrap"
-                android:orientation="vertical"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:gravity="center_horizontal"
                 android:layout_marginRight="@dimen/spacing_normal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
                 tools:ignore="RtlHardcoded">
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel1Weighted"
-                    android:text="@string/label_buttons"/>
+                    android:text="@string/label_buttons" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
@@ -40,15 +40,15 @@
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_s2"/>
+                    android:text="@string/label_s2" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_s3"/>
+                    android:text="@string/label_s3" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_s4"/>
+                    android:text="@string/label_s4" />
 
             </LinearLayout>
 
@@ -61,20 +61,20 @@
             <TextView
                 android:id="@+id/switches_column_label"
                 style="@style/MicrochipLabel1Weighted"
-                android:text="@string/label_d"
-                android:alpha="0"
-                tools:alpha="1"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:alpha="0"
+                android:text="@string/label_d"
+                tools:alpha="1" />
 
             <LinearLayout
                 android:id="@+id/switch_container"
                 style="@style/Wrap"
-                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/switches_column_label"
                 android:gravity="center_horizontal"
-                android:layout_centerVertical="true"
-                android:layout_alignStart="@+id/switches_column_label">
+                android:orientation="vertical">
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/switch_d1"
@@ -97,97 +97,98 @@
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/switch_d4"
                     style="@style/MicrochipSwitchWeighted"
-                    android:layout_height="52dp"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/relay_d1"
                     style="@style/MicrochipSwitchWeighted"
-                    android:layout_height="52dp"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/relay_d2"
                     style="@style/MicrochipSwitchWeighted"
-                    android:layout_height="52dp"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/relay_d3"
                     style="@style/MicrochipSwitchWeighted"
-                    android:layout_height="52dp"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
                     android:id="@+id/relay_d4"
                     style="@style/MicrochipSwitchWeighted"
-                    android:layout_height="52dp"
-                    android:layout_width="match_parent" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/switch_label_container"
                 style="@style/WrapDefaultPaddingLeftRight"
-                android:orientation="vertical"
-                android:gravity="center_horizontal"
-                android:layout_marginRight="@dimen/spacing_normal"
-                tools:ignore="RtlHardcoded"
                 android:layout_alignParentTop="true"
-                android:layout_toStartOf="@+id/switches_column_label">
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_toStartOf="@+id/switches_column_label"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel1Weighted"
-                    android:text="@string/label_leds"/>
+                    android:text="@string/label_leds" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d1"/>
+                    android:text="@string/label_d1" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d2"/>
+                    android:text="@string/label_d2" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/relay_3"/>
+                    android:text="@string/relay_3" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/relay_4"/>
+                    android:text="@string/relay_4" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d3"/>
+                    android:text="@string/label_d3" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/label_d4"/>
+                    android:text="@string/label_d4" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/addr_2"/>
+                    android:text="@string/addr_2" />
 
                 <oak.widget.TextViewWithFont
                     style="@style/MicrochipLabel2Weighted"
-                    android:text="@string/addr_4"/>
+                    android:text="@string/addr_4" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/buttons_container"
                 style="@style/Wrap"
-                android:orientation="vertical"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 tools:ignore="RtlHardcoded"
                 android:layout_below="@+id/switches_column_label"
                 android:layout_toEndOf="@+id/buttons_label_container"
-                android:layout_marginTop="33dp">
+                android:layout_alignBottom="@+id/buttons_label_container">
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipCircleButton
                     android:id="@+id/button_1"
                     style="@style/MicrochipCircleWeighted"
-                    android:layout_width="wrap_content" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipCircleButton
                     android:id="@+id/button_2"
@@ -197,19 +198,19 @@
                 <oak.widget.TextViewWithFont
                     android:id="@+id/buttons_column_label"
                     style="@style/MicrochipLabel1Weighted"
-                    android:text="@string/label_buttons_s"
                     android:alpha="0"
-                    tools:alpha="1"/>
+                    android:text="@string/label_buttons_s"
+                    tools:alpha="1" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipCircleButton
                     android:id="@+id/button_3"
-                    style="@style/MicrochipCircleWeighted"
-                    />
+                    style="@style/MicrochipCircleWeighted" />
 
                 <android.ble.wcm.microchip.com.microchip.widget.MicrochipCircleButton
                     android:id="@+id/button_4"
                     style="@style/MicrochipCircleWeighted"
-                    />
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp" />
 
             </LinearLayout>
         </RelativeLayout>

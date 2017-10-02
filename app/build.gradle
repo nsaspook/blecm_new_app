@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.microchip.blecm.android"
+        applicationId "com.microchip.blecm2.android"
         minSdkVersion 18
         targetSdkVersion 22 // DON'T CHANGE THIS from 22, it causes older android versions not to work correctly
         versionCode buildVersionCode()
