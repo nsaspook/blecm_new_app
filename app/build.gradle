@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.microchip.blecm2.android"
         minSdkVersion 18
-        targetSdkVersion 25 // DON'T CHANGE THIS from 22, it causes older android versions not to work correctly
+        targetSdkVersion 26 // DON'T CHANGE THIS from 22, it causes older android versions not to work correctly
         versionCode buildVersionCode()
         versionName buildVersionName()
     }

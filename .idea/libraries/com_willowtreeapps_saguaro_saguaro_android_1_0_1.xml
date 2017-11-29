@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.willowtreeapps.saguaro:saguaro-android-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/saguaro-android-1.0.1.aar/a3036eb81228f708f3ca78615b174cb4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/saguaro-android-1.0.1.aar/a3036eb81228f708f3ca78615b174cb4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.willowtreeapps.saguaro/saguaro-android/1.0.1/c255d9953d03424e57b8d438657de5d5119df24c/saguaro-android-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

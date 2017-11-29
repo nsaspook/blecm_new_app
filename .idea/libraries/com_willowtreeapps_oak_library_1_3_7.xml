@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.willowtreeapps:oak-library-1.3.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/oak-library-1.3.7.aar/878d5e0ec76738edef9231b311250f40/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/oak-library-1.3.7.aar/878d5e0ec76738edef9231b311250f40/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.willowtreeapps/oak-library/1.3.7/821e6321802a478596077dd88000df666c47059c/oak-library-1.3.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
