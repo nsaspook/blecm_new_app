@@ -558,7 +558,8 @@ public class BleService extends Service {
                 && ledsCharacteristic != null
                 && !DataStore.getUserPostInProgress(BleService.this)){
 
-            DataStore.persistBleStatusLeds(BleService.this, status);
+            // keep LED/RELAY status on running program
+            // DataStore.persistBleStatusLeds(BleService.this, status);
 
             String led1 = status.getLed1() ? "1" : "0";
             String led2 = status.getLed2() ? "1" : "0";
@@ -595,7 +596,8 @@ public class BleService extends Service {
                 && adc_chanCharacteristic != null
                 && !DataStore.getUserPostInProgress(BleService.this)){
 
-            DataStore.persistBleStatusLeds(BleService.this, status);
+            // keep LED/RELAY status on running program
+            // DataStore.persistBleStatusLeds(BleService.this, status);
 
             String relay1 = status.getRelay1() ? "1" : "0";
             String relay2 = status.getRelay2() ? "1" : "0";
