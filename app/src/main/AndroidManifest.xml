@@ -12,7 +12,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
             android:name="android.ble.wcm.microchip.com.microchip.activities.MainActivity"
             android:label="@string/app_name"
@@ -39,7 +40,7 @@
         <provider
             android:authorities="android.ble.wcm.microchip.com.provider"
             android:name="android.ble.wcm.microchip.com.microchip.provider.MicrochipProvider"
-            android:exported="true" />
+            android:exported="false" />
 
     </application>
 
