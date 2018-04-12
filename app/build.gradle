@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.microchip.blecm2.android"
@@ -44,32 +44,32 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.squareup.retrofit:retrofit:1.9.0'
-    compile 'com.squareup.okhttp:okhttp:2.7.5'
-    compile 'com.squareup.okio:okio:1.6.0'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'com.willowtreeapps:oak-library:1.3.7'
-    compile 'com.willowtreeapps.saguaro:saguaro-android:1.0.1'
-    compile 'com.google.guava:guava:20.0'
-    compile('com.github.afollestad.material-dialogs:core:0.8.5.6@aar') {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:recyclerview-v7:25.3.1'
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.squareup.okio:okio:1.6.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.willowtreeapps:oak-library:1.3.7'
+    implementation 'com.willowtreeapps.saguaro:saguaro-android:1.0.1'
+    implementation 'com.google.guava:guava:20.0'
+    implementation('com.github.afollestad.material-dialogs:core:0.8.5.6@aar') {
         transitive = true
     }
-//    compile 'com.github.afollestad:material-dialogs:0.9'
-    compile('com.iangclifton.android:floatlabel:1.0.4') {
+//    implementation 'com.github.afollestad:material-dialogs:0.9'
+    implementation('com.iangclifton.android:floatlabel:1.0.4') {
         exclude group: 'com.android.support'
     }
 
-    compile('com.google.android.gms:play-services-base:9.8.+') {
+    implementation('com.google.android.gms:play-services-base:9.8.+') {
         exclude group: 'com.android.support'
     }
-    compile('com.google.android.gms:play-services-maps:9.8.+') {
+    implementation('com.google.android.gms:play-services-maps:9.8.+') {
         exclude group: 'com.android.support'
     }
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta6'
 }
 
 
