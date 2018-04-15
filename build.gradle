@@ -7,9 +7,14 @@ buildscript {
         mavenLocal()
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
         maven { url "https://oss.sonatype.org/content/groups/public" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.1'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
@@ -43,6 +48,10 @@ allprojects {
         jcenter()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 apply plugin: 'signing'
