@@ -48,14 +48,14 @@
 
         <oak.widget.TextViewWithFont
             style="@style/MicrochipLabel3"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
             android:text="@string/settings_ignore_error"
             />
 
         <android.ble.wcm.microchip.com.microchip.widget.MicrochipSwitch
             android:id="@+id/ignore_error_switch"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             style="@style/MicrochipSwitch"
             />

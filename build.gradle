@@ -39,8 +39,8 @@ def Integer buildVersionCode() {
  * Gradle-Release-Plugin handles all version name incrementing
  * @return String Version Name.
  */
-def String buildVersionName() {
-    return "1.3.4";
+String buildVersionName() {
+    return "1.3.5";
 }
 
 allprojects {
