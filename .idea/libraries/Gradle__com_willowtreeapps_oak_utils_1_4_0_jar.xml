@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.willowtreeapps:oak-utils:1.4.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.willowtreeapps/oak-utils/1.4.0/f8b8100fc68696975abe9563d3b6bfd6cff30685/oak-utils-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.willowtreeapps/oak-utils/1.4.0/4d45c9a8e2b11bab1635cfc89c9174f83101154/oak-utils-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.willowtreeapps/oak-utils/1.4.0/cce490e92b083b0909ca460305dec09806fa773e/oak-utils-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
