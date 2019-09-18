@@ -56,7 +56,7 @@ dependencies {
     implementation 'com.willowtreeapps.saguaro:saguaro-android:1.0.1'
     implementation 'com.google.guava:guava:20.0'
     implementation('com.github.afollestad.material-dialogs:core:0.8.5.6@aar') {
-        transitive = true
+//        transitive = true
     }
 //    implementation 'com.github.afollestad:material-dialogs:0.9'
     implementation('com.iangclifton.android:floatlabel:1.0.4') {

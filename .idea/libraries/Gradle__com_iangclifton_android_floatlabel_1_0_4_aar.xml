@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.iangclifton.android:floatlabel:1.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/floatlabel-1.0.4.aar/c3182dad82d6b15d0c61bccc62ba3020/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/floatlabel-1.0.4.aar/c3182dad82d6b15d0c61bccc62ba3020/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iangclifton.android/floatlabel/1.0.4/51e2632abb8e3627d46e672a4da0cba14a02cb86/floatlabel-1.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iangclifton.android/floatlabel/1.0.4/861be787aa7c70e96b3f07318cd1a4e7c15015f5/floatlabel-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
