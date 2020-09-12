@@ -9,7 +9,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e2cd4e-d71f-4351-8523-fba9dd512a03" name="Default Changelist" comment="" />
+    <list default="true" id="53e2cd4e-d71f-4351-8523-fba9dd512a03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568848750916</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update to latest AS">
+      <created>1599876288931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599876288931</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update to latest AS">
+      <created>1599876372439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599876372439</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,14 +189,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="update to latest AS" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2" timestamp="1599876288412">
+    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2" timestamp="1599876372111">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
-    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876288412" />
-    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2" timestamp="1599876308709">
+    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876372111" />
+    <state x="547" y="228" width="588" height="569" key="MultipleFileMergeDialog" timestamp="1599876416375">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
-    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876308709" />
+    <state x="547" y="228" width="588" height="569" key="MultipleFileMergeDialog/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876416375" />
+    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2" timestamp="1599876386217">
+      <screen x="0" y="0" width="1680" height="1024" />
+    </state>
+    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876386217" />
     <state x="459" y="362" width="763" height="302" key="git4idea.ui.GitUnstashDialog" timestamp="1599876269373">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
