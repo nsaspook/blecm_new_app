@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53e2cd4e-d71f-4351-8523-fba9dd512a03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +56,10 @@
     <option name="height" value="984" />
   </component>
   <component name="ProjectId" id="1hO9Zo8e82Ohogasmqj6ULASAf1" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -181,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599876372439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update to latest AS">
+      <created>1599876477938</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599876477938</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,18 +193,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="update to latest AS" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2" timestamp="1599876372111">
+    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2" timestamp="1599876477689">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
-    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876372111" />
+    <state x="455" y="100" width="771" height="826" key="CommitChangelistDialog2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876477689" />
     <state x="547" y="228" width="588" height="569" key="MultipleFileMergeDialog" timestamp="1599876416375">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
     <state x="547" y="228" width="588" height="569" key="MultipleFileMergeDialog/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876416375" />
-    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2" timestamp="1599876386217">
+    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2" timestamp="1599876489788">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
-    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876386217" />
+    <state x="435" y="248" width="812" height="530" key="Vcs.Push.Dialog.v2/0.0.1680.1024/0.0.1440.874@0.0.1680.1024" timestamp="1599876489788" />
     <state x="459" y="362" width="763" height="302" key="git4idea.ui.GitUnstashDialog" timestamp="1599876269373">
       <screen x="0" y="0" width="1680" height="1024" />
     </state>
